@@ -1,36 +1,116 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# VibOS.ai - The Missing Link for Humanoid Robots
 
-## Getting Started
+![VibOS Logo](public/logo-small-transparent.png)
 
-First, run the development server:
+VibOS is an innovative platform designed to enhance humanoid robots with human-like capabilities in three key areas:
+- **Voice**: Natural speech interaction
+- **Intelligence**: Advanced cognitive processing
+- **Behavior**: Human-like interactions and responses
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Features
+
+- **Interactive Voice Agent**: Real-time voice interaction using OpenAI's Agents
+- **Modern UI**: Sleek, responsive interface built with React and Tailwind CSS
+- **Request Early Access**: User registration system for early adopters
+- **Live Demo**: Interactive demonstration of voice capabilities
+
+## 📋 Project Structure
+
+```
+├── public/                # Static assets
+├── src/
+│   ├── app/               # Next.js App Router pages
+│   │   ├── api/           # API endpoints
+│   │   ├── voice-agent/   # Voice agent demo page
+│   │   └── page.tsx       # Home page
+│   ├── components/        # React components
+│   │   ├── ui/            # UI components
+│   │   ├── hero.tsx       # Hero section
+│   │   ├── product.tsx    # Product info
+│   │   └── ...            # Other components
+│   └── lib/               # Utility functions
+└── ...                    # Config files
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Framework**: [Next.js 15](https://nextjs.org/)
+- **UI Library**: [React 19](https://react.dev/)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+- **Voice Capability**: [@openai/agents](https://openai.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Development**: TypeScript, ESLint, Turbopack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚦 Getting Started
 
-## Learn More
+### Prerequisites
 
-To learn more about Next.js, take a look at the following resources:
+- Node.js 18.0 or later
+- npm package manager
+- OpenAI API key with access to Realtime API
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Environment Variables
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Create a `.env.local` file in the root directory with the following variables:
 
-## Deploy on Vercel
+```bash
+OPENAI_API_KEY=your_openai_api_key_here
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This API key is required for the voice agent demo functionality. You can obtain an API key from the [OpenAI platform](https://platform.openai.com/api-keys).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Installation
+
+1. Clone the repository
+   ```bash
+   git clone https://github.com/vibosai/demo1.git
+   cd demo1
+   ```
+
+2. Install dependencies
+   ```bash
+   npm install
+   ```
+
+3. Start the development server
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) with your browser
+
+## 🌐 Pages
+
+- **Home (`/`)**: Landing page with product information
+- **Voice Agent Demo (`/voice-agent`)**: Interactive voice agent demonstration
+
+## 📦 Component Overview
+
+- **Navbar**: Site navigation
+- **HeroSection**: Main landing banner with call-to-action
+- **Product**: VibOS product description
+- **Layers**: System architecture visualization
+- **Audience**: Target audience information
+- **Contact**: Contact form and information
+- **Footer**: Site footer with links
+
+## 🧪 Development
+
+### Available Scripts
+
+- `npm run dev` - Start development server with Turbopack
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+
+## 📄 License
+
+This project is proprietary and confidential.
+
+## 🤝 Contributing
+
+Please contact the project maintainers for information about contributing.
+
+---
+
+Built with ❤️ by the VibOS team
